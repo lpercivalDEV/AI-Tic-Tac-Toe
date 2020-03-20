@@ -6,28 +6,33 @@
     <title>Tic-Tac-Toe AI</title>
   </head>
   <body>
-    <h1>Try your best - have fun. Computer will win. ;)</h1>
+    <h1>Tic Tac Toe w/Unbeatable AI</h1>
+    <h3>"Strange game. The only way to win is not to play." </h3>
     <table class="game-board">
       <tr class="top-row">
-        <td value="8"></td>
-        <td value="1"></td>
-        <td value="6"></td>
+        <td id="0" class="game-cell" value="8"></td>
+        <td id="1" class="game-cell" value="1"></td>
+        <td id="2" class="game-cell" value="6"></td>
       </tr>
       <tr class="middle-row">
-        <td value="3"></td>
-        <td value="5"></td>
-        <td value="7"></td>
+        <td id="3" class="game-cell" value="3"></td>
+        <td id="4" class="game-cell" value="5"></td>
+        <td id="5" class="game-cell" value="7"></td>
       </tr>
       <tr class="bottom-row">
-        <td value="4"></td>
-        <td value="9"></td>
-        <td value="2"></td>
+        <td id="6" class="game-cell" value="4"></td>
+        <td id="7" class="game-cell" value="9"></td>
+        <td id="8" class="game-cell" value="2"></td>
       </tr>
     </table>
 
-    <section class="ai-read-out">
+    <section class="endgame">
       <p>...Calculating...</p>
+      <h2 class="text">.....beep....boop.....blip....</h2>
+      <button id="reset" type="button" name="button">Reset</button>
     </section>
+
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
