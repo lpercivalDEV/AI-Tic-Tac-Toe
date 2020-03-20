@@ -1,0 +1,23 @@
+body {
+  font-size: 18px;
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  font-family: monospace;
+  color: lime;
+}
+
+.game-board {
+  border: 1px dotted white;
+  width: 100%;
+  padding: 30px;
+}
+
+.top-row, .middle-row, .bottom-row{
+  width: 100%;
+}
+
+.game-board tr td{
+  border: 1px solid lime;
+  height: 120px;
+}
