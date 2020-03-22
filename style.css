@@ -3,8 +3,20 @@ body {
   background-color: black;
   display: grid;
   justify-content: center;
-  font-family: monospace;
+  font-family: 'Share Tech Mono', monospace;
   color: lime;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: lime;
+}
+
+a:hover {
+  background-color: lime;
+  color: black;
+  cursor: pointer;
 }
 
 .game-board {
