@@ -26,7 +26,9 @@ These tree nodes can be assigned a value based on each possible outcome. Moves t
 
 The maximizing player will attempt to make moves that moves its score closer to +∞ which are moves that will get it closer to a winning state. While the minimizing player does the same thing but in the opposite direction - selecting moves closer to -∞.
 
-Tic-Tac-Toe is a "solved" game - meaning the outcome is already known if both players play perfectly. Therefore it is relatively simple to look through the possible moves to find the best one to play.In more complicated games like Chess, there is another parameter called "Depth" that is needed to make the minimax algorithm work efficiently. This parameter is used to dictate how many moves ahead the algorithm should consider when creating its branch of possible moves. In Chess this makes sense because there are millions of possible moves each turn, but tic-tac-toe is a simple game, so it was not necessary to include the depth  parameter here.
+Tic-Tac-Toe is a "solved" game - meaning the outcome is already known if both players play perfectly. Therefore it is relatively simple to look through the possible moves to find the best one to play.
+
+In more complicated games like Chess, there is another parameter called "Depth" that is needed to make the minimax algorithm work efficiently. This parameter is used to dictate how many moves ahead the algorithm should consider when creating its branch of possible moves. In Chess this makes sense because there are millions of possible moves each turn, but tic-tac-toe is a simple game, so it was not necessary to include the depth  parameter here.
 
 Because in this case, the game involves a human player vs. an AI, there are only two possible outcomes - the AI wins, or the game is tied.
 
