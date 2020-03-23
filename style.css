@@ -6,10 +6,18 @@ body {
   font-family: 'Share Tech Mono', monospace;
   color: lime;
   text-align: center;
+  overflow: hidden;
+}
+
+.game-wrapper{
+  opacity: 1;
+  display: grid;
+  justify-content: center;
+  text-align: center;
 }
 
 a{
-  text-decoration: none;
+  text-decoration: overline underline;
   color: lime;
 }
 
@@ -17,6 +25,7 @@ a:hover {
   background-color: lime;
   color: black;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .game-board {
@@ -27,7 +36,7 @@ a:hover {
 
 td{
   border: 2px solid lime;
-  height: 120px;
+  height: 160px;
   width: 120px;
   text-align: center;
   vertical-align: middle;
@@ -52,10 +61,11 @@ table tr td:last-child {
 }
 
 .endgame {
-  /* display: none; */
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  top: -323px;
-  left: 41px;
+  top: -385px;
   opacity: 85%;
   width: 500px;
   height: auto;
@@ -66,15 +76,105 @@ table tr td:last-child {
 }
 
 button{
+  margin-top: 75px;
   background-color: black;
   border: 2px solid lime;
   color: lime;
   cursor: pointer;
+  position: absolute;
+  top: 660px;
+  left: 8%;
+  width: 85%;
+  height: 40px;
+  font-size: 25px;
 }
 
 button:hover {
   background-color: lime;
   border: 2px solid green;
   color: black;
-  font-size: 20px;
+}
+
+
+/* Glitch effects: */
+.glitch {
+  color: grey;
+  background: url("https://i.stack.imgur.com/5PHPI.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+	width: 100vw;
+	height: 100vh;
+  opacity: 50%;
+  z-index: -100;
+}
+
+.glitch:before {
+	content: '';
+	position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: url("https://i.stack.imgur.com/5PHPI.gif");
+	opacity: .5;
+	mix-blend-mode: hard-light;
+}
+
+.glitch:hover:before {
+	animation: animate .1s linear infinite;
+}
+
+@keyframes animate {
+	0%
+	{
+		background-position: 0 0;
+		filter: hue-rotate(0deg);
+	}
+	10%
+	{
+		background-position: 5px 0;
+	}
+	20%
+	{
+		background-position: -5px 0;
+	}
+	30%
+	{
+		background-position: 15px 0;
+	}
+	40%
+	{
+		background-position: -5px 0;
+	}
+	50%
+	{
+		background-position: -25px 0;
+	}
+	60%
+	{
+		background-position: -50px 0;
+	}
+	70%
+	{
+		background-position: 0 -20px;
+	}
+	80%
+	{
+		background-position: -60px -20px;
+	}
+	81%
+	{
+		background-position: 0 0;
+	}
+	100%
+	{
+		background-position: 0 0;
+		filter: hue-rotate(360deg);
+	}
 }
