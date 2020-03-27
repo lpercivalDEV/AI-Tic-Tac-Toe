@@ -32,6 +32,15 @@ a:hover {
   text-decoration: none;
 }
 
+.repo{
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
 .game-board {
   margin: 50px;
   padding: 30px;
