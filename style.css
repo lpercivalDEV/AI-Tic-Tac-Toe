@@ -79,7 +79,7 @@ table tr td:last-child {
   position: relative;
   top: -385px;
   opacity: 85%;
-  width: 500px;
+  max-width: 100vw;
   height: auto;
   padding: 30px;
   background-color: black;
