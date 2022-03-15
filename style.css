@@ -81,6 +81,7 @@ table tr td:last-child {
   display: none;
   margin-left: auto;
   margin-right: auto;
+	margin-bottom: 60px;
   position: relative;
 /*   top: -385px; */
   top: 4%;
