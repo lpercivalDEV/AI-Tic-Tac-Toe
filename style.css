@@ -201,7 +201,7 @@ button:hover {
 /* MOBILE */
 @media only screen and (max-width: 500px) {
    body {
-    overflow-y: scroll;
+/*     overflow-y: scroll; */
 	  max-height: 100vh;
 /*  }
  .game-wrapper {
@@ -209,7 +209,7 @@ button:hover {
 	 height: 80vh;
 	} */
 	.glitch { 
-		max-height: 100vh;
+		max-height: 80vh;
 		overflow: hidden;
 	}
 }
