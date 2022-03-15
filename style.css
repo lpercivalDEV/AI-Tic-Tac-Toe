@@ -46,6 +46,8 @@ a:hover {
 
 .game-board {
   border-collapse: collapse;
+	max-height: 100%;
+	overflow-y: scroll;
 }
 
 td{
@@ -79,7 +81,8 @@ table tr td:last-child {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: -385px;
+/*   top: -385px; */
+  top: 4%;
   opacity: 85%;
   max-width: 100vw;
   height: auto;
