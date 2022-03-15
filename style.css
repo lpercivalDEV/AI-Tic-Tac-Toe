@@ -199,7 +199,8 @@ button:hover {
 /* MOBILE */
 @media only screen and (max-width: 500px) {
   body {
-    overflow-y: hidden;
+    overflow-y: scroll;
+	  max-height: 150vh;
   }
  .game-wrapper {
 	 margin-bottom: 0.5rem;
