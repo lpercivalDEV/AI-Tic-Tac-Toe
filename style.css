@@ -190,3 +190,11 @@ button:hover {
 		filter: hue-rotate(360deg);
 	}
 }
+
+
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+  body {
+    overflow-y: scroll;
+  }
+}
